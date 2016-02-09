@@ -1,0 +1,243 @@
+/* ----------- ZuluFilms Styles --------------------
+------------- CSS styles goes here ----------- */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic);
+@import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);
+
+/* ----------Font Roboto For body content------------
+-------------Font Bowlby One SC For Headings----------*/
+
+body, html {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background: #fff;
+    font-family: Roboto ,"Times New Roman", monospace, Serif;
+}
+p, small, label, h3 {
+    font-family: Roboto, "Times New Roman", monospace, Serif;
+}
+h1, h2, h4, h5, h6, strong {
+    font-family: "Bowlby One SC", "Times New Roman", arial, Serif;
+}
+#main-nav {
+    background-color:#fff;
+    overflow: visible;
+    height: 100px;
+
+}
+
+.bg-video-header {
+    background-color:#000;
+    position:relative;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:83vh;
+    overflow:hidden;
+    top: 90px;
+    margin-bottom: 90px;
+}
+
+header.bg-video-header video {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+}
+
+.seperator {
+    /*background: #fff url(../images/seperator.jpg) no-repeat center;*/
+    background: #fff url(../images/ZULUFilmsBanner_RGB.jpg) no-repeat center;
+    height:25px;
+    overflow: hidden;
+}
+
+.how-sect-round {
+    position:relative;
+}
+.port-sect .row video {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: table;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.port-sect .row {
+    margin-bottom: 30px;
+}
+
+/*.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-8, .col-md-6, .col-xs-12, .col-xs-6 {
+    background-color:#c0c0c0;
+    border:1px solid #484848;
+}*/
+.circle, .content {
+    min-height:100px;
+    max-width: 100px;
+}
+.circle {
+    background-color:#3c3730;
+    border-radius: 60px;
+    margin-top:10px;
+}
+.content {
+    text-align: center;    
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+    margin: 20px 0;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.center-block {
+    display:table;
+    margin:0 auto;
+}
+form {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+h2, footer {
+    text-align: center;
+    background:#fff;
+}
+footer {
+    background: #fff url(../images/ZULUFilmsBanner_RGB.jpg) no-repeat center;
+    height: 60px;
+}
+footer small {
+    background:#fff;
+    display: inline-block;
+    margin-top:15px;
+    padding: 10px;
+}
+.contact::before {
+    content: "~ ";
+    color: darkorange;
+}
+.contact::after {
+    content: " ~";
+    color: darkorange;
+}
+textarea {
+    width:100%;
+}
+.navbar-default .navbar-nav > li > a:link, .navbar-default .navbar-nav > li > a:visited {
+    background:#fff;
+    border-bottom: 4px solid #fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active {
+    background-color: #fff;
+    color:darkblue;
+    border-bottom: 4px solid orange;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+}
+nav .main-navigation  li{
+    /*border-bottom: 4px solid #fff;
+    border-top: 4px solid #fff;*/
+    padding-top: 3px;
+}
+.how-section {
+    padding: 10px 0;
+}
+.how-rect {
+    background: #fff;
+    border: 1px solid darkorange;
+}
+
+.navbar-brand img {
+    margin-left: 20px;
+}
+.right-nav {
+    padding-top: 20px;
+}
+.social-links {
+    padding: 3px 6px 0 20px;
+    margin-left: 20px;
+    margin-top: 2px;
+    position: absolute;
+    top:15px;
+    right:50px;
+}
+.social-links a:link .fa, .social-links a:visited .fa {
+    color: burlywood;
+    font-size:25px
+}
+.social-links a:hover .fa {
+    color:#6a6a6a;
+}
+.bk-top {
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    width: 35px;
+    height: 35px;
+    background-color:maroon;
+    text-align: center;
+    font-size: 26px;
+    color: #66cc66;
+    right:0;
+    padding:4px;
+}
+.about-sect {
+    margin-top:10px;
+    margin-bottom: 25px;
+}
+
+ul li {
+    padding: 0 20px;
+    background: #fff;
+}
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .social-links {
+        background: #008062;
+        right: 75px;
+        padding: 0 0 4px 0;
+        top: 20px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .main-navigation {
+        position: relative;
+        right: 180px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:900px) {
+    .main-navigation li {
+        padding: 0 5px;
+    }
+}
+#contact .btn-warning {
+    background-color: burlywood;
+    border:1px dotted #d8d806;
+}
+
+/* --------------------
+Developed by Amath Mbaye 
+at amathm.co.uk
+----------------------- */
